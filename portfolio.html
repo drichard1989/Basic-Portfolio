@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>Dylan Richard's Portfolio</title>
 </head>
 <body>
 
 <!-- This 'header bar' is meant to be a position fixed bar that stays at the top of the page with my name, and links for navigation next to it using semantic elements. I am trying to use semantic elements as much as possible.  -->
 
+	
 	<div class="headerBar">
-		<header>
-			<h1>Dylan Richard</h1>
-		</header>
-		
-		<nav>
-			<a href="#">About</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
-		</nav>
-	</div>
+
+		<!-- "headerWrapper" is the container for containing the header and the nav tags in the 960px and centering it on the page.  -->
+		<div class="narrowHeaderWrapper">
+			<header>
+				<h1>Dylan Richard</h1>
+			</header>
+
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</div>	
 
 	<!-- This class called "wrapper" is meant to wrap both the section element and the aside element, keeping the two columns centered in the page with margins between them.  -->
 
@@ -27,20 +34,38 @@
 
 			<section>
 				<h1>Portfolio</h1>
+					<div id="portfolioPics">
 
-					<img src="#">
 
-					<img src="#">
+						<div class="caboAdventure">
+							<h2 id="pictureTitles">Cabo Adventure!</h2>
+						</div>
 
-					<img src="#">
+						<div class="tennisAction">
+							<h2 id="pictureTitles">Tennis Action!</h2>
+						</div>
 
-					<img src="#">
+						<div class="birthdays">
+							<h2 id="pictureTitles">Birthdays!</h2>
+						</div>
 
-					<img src="#">
+						<div class="babies">
+							<h2 id="pictureTitles">Babies!</h2>
+						</div>
 
-					<img src="#">
+						<div class="randomStills">
+							<h2 id="pictureTitles">Random Stills</h2>
+						</div>
 
-					<img src="#">
+						<div class="foodie">
+							<h2 id="pictureTitles">Foodie!</h2>
+						</div>
+
+						<div class="waterShots">
+							<h2 id="pictureTitles">Water Shots!</h2>
+						</div>
+
+					</div>
 			</section>
 
 			<!-- Notice here, the aside element is still within the wrapper. This is because the element needs to float next to the section element, while being centered in the page within the margins. -->
@@ -55,8 +80,10 @@
 			</aside>
 		</div>
 
+	<div class="push"></div>
+
 	<footer>
-		<h1>© Copyright 2016 Dylan Richard</h1>
+		<h1>&copy;Copyright 2016 Dylan Richard</h1>
 	</footer>
 </body>
 </html>
