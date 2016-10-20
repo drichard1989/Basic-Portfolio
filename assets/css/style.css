@@ -59,13 +59,21 @@ nav {
 	margin-right: 10px;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	}
+}
 
+
+.hoverBorder:hover {
+outline: 3px solid #4aaaa5;
+outline-offset: 6px;
+}
 /*Style of the links and text within the nav bar*/
 a {
 	text-decoration: none;
-	color: #777777;
+	color: #777777;	
 }
+
+
+
 
 /*This class called "wrapper" is meant to wrap both the section element 
 and the aside element, keeping the two columns centered in the page 
@@ -84,7 +92,8 @@ section {
 	float: left;	
 	padding-left: 15px;
 	padding-right: 15px;
-	background-color: white;	
+	background-color: white;
+	padding-bottom: 15px;	
 }
 
 /*Formatting for the header within the section area. */
@@ -228,13 +237,14 @@ portfolio file.*/
 #imageFloat {
 	float: left;
 	margin-right: 10px;
-
 }
 
 .push {
 	height: 155px;
 	clear: left;
 }
+
+
 
 footer {
 	background-color: #666666;
